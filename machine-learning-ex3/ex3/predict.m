@@ -9,6 +9,8 @@ num_labels = size(Theta2, 1);
 
 % You need to return the following variables correctly 
 p = zeros(size(X, 1), 1);
+q= zeros(size(Y,1),1);
+
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
@@ -28,6 +30,7 @@ hdummy=sigmoid(a2*(Theta2)');
 h=hdummy';
 [max_value max_index]=max(h);
 p=(max_index)';
+q=(max_index);
 
 
 
